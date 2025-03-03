@@ -7,8 +7,6 @@ const cors = require('cors')
 app.use(cors());
 app.use(express.json());
 
-// SoU4AKzoa8i38lFI
-
 app.get('/', (req, res) => {
   res.send('Hello MERN!')
 })
@@ -17,7 +15,7 @@ app.get('/', (req, res) => {
 
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-const uri = "mongodb+srv://mern-book-store:SoU4AKzoa8i38lFI@book-store.cxqyd.mongodb.net/?retryWrites=true&w=majority&appName=Book-Store";
+const uri = "mongodb+srv://mern-book-store:<Private Key>@book-store.cxqyd.mongodb.net/?retryWrites=true&w=majority&appName=Book-Store";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
